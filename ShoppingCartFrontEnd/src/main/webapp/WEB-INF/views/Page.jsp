@@ -76,43 +76,29 @@
 		<%@include file="loginerror.jsp"%>
 	</c:if>
 
-	<c:if test="${userClickedKeyboards==true}">
-		<%@include file="keyboards.jsp"%>
-	</c:if>
+	
 	<c:if test="${userClickedAccount==true}">
 		<%@include file="Account.jsp"%>
 	</c:if>
-	<c:if test="${userClickedLaptioAccessories==true}">
-		<%@include file="laptopaccessories.jsp"%>
-	</c:if>
-	<c:if test="${userClickedBatteriesAndCharger==true}">
-		<%@include file="batteriesandcharger.jsp"%>
-	</c:if>
+	
+
 		<c:if test="${userClickedMyCart==true}">
 		<%@include file="Cart.jsp"%>
 	</c:if>
-		<c:if test="${userClickedFanController==true}">
-		<%@include file="fancontroller.jsp"%>
-	</c:if>
+		
 	<c:if test="${userClickedOperatingsystem==true}">
 		<%@include file="operatingsystem.jsp"%>
 	</c:if>
-	<c:if test="${userClickedRAM==true}">
-		<%@include file="ram.jsp"%>
-	</c:if>
+	
 	<c:if test="${userClickedItDepot==true}">
 		<%@include file="home.jsp"%>
 	</c:if>
-	<c:if test="${userClickedAntiVirus==true}">
-		<%@include file="antivirus.jsp"%>
-	</c:if>
+	
 	<c:if test="${userClickedMonitor==true}">
 		<%@include file="monitor.jsp"%>
 	</c:if>
 
-	<c:if test="${userClickedMotherboards==true}">
-		<%@include file="motherboards.jsp"%>
-	</c:if>
+	
 	<%-- <c:if test="${userClickedMouse==true}">
 		<%@include file="mouse.jsp"%> 
 	</c:if> --%>
@@ -135,6 +121,11 @@
 	<c:if test="${userClickedLaptops==true}">
 		<%@include file="laptops.jsp"%>
 	</c:if>
+	<c:if test="${userClickedShippingAddress==true}">
+		<%@include file="SideA.jsp"%>
+	</c:if>
+	
+	
 		<c:if test="${userClickedComputers==true}">
 		<%@include file="Computers.jsp"%>
 	</c:if>
@@ -147,7 +138,15 @@
      <c:if test="${userClickedProductDetails==true}">
 		<%@include file="productdetails.jsp"%>
 	</c:if>
-
+	 <c:if test="${userClickShowProduct==true}">
+		<%@include file="productdetails.jsp"%>
+	</c:if>
+	<c:if test="${userClickAllProducts == true  or userClickCategoryProducts == true}" >
+				<%@include file="ListProducts.jsp"%>
+			</c:if>  
+<c:if test="${userClickShowProduct==true}">
+		<%@include file="SingleProduct.jsp"%>
+	</c:if>
 	<!-- /.container -->
 
 	<!--footer comes here  -->

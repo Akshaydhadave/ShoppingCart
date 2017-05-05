@@ -7,20 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1><p class="forlegends">Your  Profile</p></h1>
+<center><h1><p class="forlegends">Your  Profile</p></h1></center>
 					
 					<div class="panel panel-default">
 					  	
 						<div class="panel-body">
-							<h2><p class="myachead">Name: 
-							<span class="myactext">${user.fname} ${user.lname}</span></p></h2>
+							<center><h2><p class="myachead">Name: 
+							<span class="myactext">${user.fname} ${user.lname}</span></p></h2></center>
 							<hr />
-							<h2><p class="myachead">E-mail: <br /> <span class="myactext">${user.email}</span></p></h2>
+<center><h2><p class="myachead">E-mail: <span class="myactext">${user.email}</span></p></h2></center>
 							<hr />
-							<h2><p class="myachead">Mobile Phone Number: <br /> <span class="myactext">${user.pno}</span></p></h2>
+<center><h2><p class="myachead">Mobile Phone Number: <span class="myactext">${user.pno}</span></p></h2></center>
 						
 							<hr>
-							<h2><p class="myachead">Address: <span class="myactext"><br/>${user.add1} <br/> ${user.add2} <br/>${user.add3} <br/>${user.city} <br/>${user.state} <br/>${user.pincode}</span></p><h2>
+<center><h2><p class="myachead">Address: <span class="myactext"><br/>${user.add1}${user.add2}${user.add3} <br/> City:- ${user.city} <br/>${user.state} <br/>${user.pincode}</span></p><h2></center>
 							
 
 						</div>							

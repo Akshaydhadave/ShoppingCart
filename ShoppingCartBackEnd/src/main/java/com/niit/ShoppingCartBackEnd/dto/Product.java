@@ -27,7 +27,18 @@ public class Product implements Serializable {
 	private int id;
 	private String name;
 	private String description;
-	private int price;  
+	private int price; 
+	private int cid;
+	public int getCid() {
+		return cid;
+	}
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+
+
+
 	@Column(name="image")
 	private String pimage;
 
@@ -99,11 +110,13 @@ public class Product implements Serializable {
 		this.active = active;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", description="
-				+ description + ", active=" + active + ", price=" + price
-				+ ", image=" + image + "]";
+		return "Product [id=" + id + ", name=" + name + ", description="
+				+ description + ", price=" + price + ", cid=" + cid
+				+ ", pimage=" + pimage + ", active=" + active + "]";
 	}
 
 	public String getFilePath(String path1, String contextPath) {

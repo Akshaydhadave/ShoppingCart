@@ -18,7 +18,7 @@ create table product (
 id IDENTITY,
 name VARCHAR(50),
 description VARCHAR(255),
-
+cid NUMBER(4) references category(id) on delete cascade,
 price number(9),
 image VARCHAR(50),
 active boolean,
@@ -70,3 +70,16 @@ create table cartitem (
 	
 );
 
+
+create table address (
+
+	addid IDENTITY primary key,
+	aid number(4) not null,
+	add1 varchar(100) not null,
+	add2 varchar(100) not null,
+	add3 varchar(100) not null,
+	city varchar(100) not null,
+	state varchar(100) not null,
+	pincode number(6) not null,
+	is_active boolean not null
+);

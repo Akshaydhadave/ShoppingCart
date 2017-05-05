@@ -14,7 +14,12 @@
   <h2><center>Add Product Data</center></h2>
   <form:form method="POST" action="${contextRoot}/admin/saveproduct" commandName="product" enctype="multipart/form-data" style="background-color: paleturquoise">
       <div >
-          <center> <form:label path="name">Category Name:</form:label></center>
+          <center> <form:label path="cid">Category Id:</form:label></center>
+           <center><form:input type="text" path="cid" class="form-control"/></center>
+       </div>
+     
+      <div >
+          <center> <form:label path="name">Product Name:</form:label></center>
            <center><form:input type="text" path="name" class="form-control"/></center>
        </div>
        <div>

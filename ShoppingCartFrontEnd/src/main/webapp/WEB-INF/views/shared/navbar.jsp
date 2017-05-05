@@ -135,10 +135,11 @@
 								<li><a href="${contextRoot}/Account/${userid}">Profile</a></li>
 									<li><a href="${contextRoot}/mycart/${userid}">My Cart</a></li>
 
-								<li><a href="${contextRoot}/user/changeAddress">Addresses</a></li>
-								<li><a href="${contextRoot}/user/personaldetails">Personal Details</a></li>
+								<li><a href="${contextRoot}/changeAddress">Addresses</a></li>
+								<li><a href="${contextRoot}/personaldetails">Personal Details</a></li>
 								
-								<li><a href="${contextRoot}/user/orderDetails">Orders</a></li>
+								<li><a href="${contextRoot}/orderDetails">Orders</a></li>
+								<li><a href="${contextRoot}/manageAddress">Shipping Address</a></li>
 							
 							</ul></li>
 					</ul>

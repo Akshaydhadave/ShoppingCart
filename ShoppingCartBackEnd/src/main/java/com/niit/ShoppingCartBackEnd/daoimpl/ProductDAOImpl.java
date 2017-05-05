@@ -1,8 +1,8 @@
 package com.niit.ShoppingCartBackEnd.daoimpl;
 import java.util.List;
 
-import org.hibernate.Query;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -89,5 +89,22 @@ public class ProductDAOImpl implements ProductDAO {
 			return false;
 		}
 	}
+
+	
+	@Override
+	public List<Product> listActiveProductsByCategory(int categoryId) {
+		//Category category=categoryDAO.get(categoryId);
+		
+		String hlist = "from Product where active= :active and cid= :cid";
+		
+		Query query = sessionFactory.getCurrentSession().createQuery(hlist);
+		
+		query.setParameter("active", true);
+		query.setParameter("cid", categoryId);
+		
+		
+		return query.getResultList();
+	}
+	
 
 }
