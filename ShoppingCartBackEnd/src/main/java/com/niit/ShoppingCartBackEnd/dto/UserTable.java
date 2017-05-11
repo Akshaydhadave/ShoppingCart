@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
@@ -38,6 +39,43 @@ public class UserTable {
 	private String city;
 	@Size(min=2,max=50, message="Please enter valid address line!")
 	private String state;
+	
+	
+	@Transient
+	private String Cpw;
+	
+	@Transient
+	private String NPw1;
+	
+	@Transient
+	private String Npw2;
+	
+	
+	
+	public String getCpw() {
+		return Cpw;
+	}
+
+	public void setCpw(String cpw) {
+		Cpw = cpw;
+	}
+
+	public String getNPw1() {
+		return NPw1;
+	}
+
+	public void setNPw1(String nPw1) {
+		NPw1 = nPw1;
+	}
+
+	public String getNpw2() {
+		return Npw2;
+	}
+
+	public void setNpw2(String npw2) {
+		Npw2 = npw2;
+	}
+
 	private int pincode;
 	private String role="ROLE_USER";
 	@OneToOne

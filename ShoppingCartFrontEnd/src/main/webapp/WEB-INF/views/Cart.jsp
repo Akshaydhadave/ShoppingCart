@@ -28,7 +28,7 @@
 
 <div class="panel">
 	<div class="panel-body">
-		<p>Total &#8377; ${cartdata.totalcost}</p>
+		<h4><p>Total &#8377; ${cartdata.totalcost}</p></h4>
 	</div>
 
 </div>

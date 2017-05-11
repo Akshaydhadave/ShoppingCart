@@ -121,9 +121,9 @@
 	<c:if test="${userClickedLaptops==true}">
 		<%@include file="laptops.jsp"%>
 	</c:if>
-	<c:if test="${userClickedShippingAddress==true}">
+	 <c:if test="${userClickedShippingAddress==true || userClickedPersonalDetails == true || userClickedChangePassword == true}">
 		<%@include file="SideA.jsp"%>
-	</c:if>
+	</c:if> 
 	
 	
 		<c:if test="${userClickedComputers==true}">
@@ -141,6 +141,7 @@
 	 <c:if test="${userClickShowProduct==true}">
 		<%@include file="productdetails.jsp"%>
 	</c:if>
+
 	<c:if test="${userClickAllProducts == true  or userClickCategoryProducts == true}" >
 				<%@include file="ListProducts.jsp"%>
 			</c:if>  

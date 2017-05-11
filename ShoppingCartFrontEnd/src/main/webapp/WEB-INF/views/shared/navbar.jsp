@@ -5,7 +5,7 @@
 
 <div class="jumbotron text-center myJumbo">
 	<h1>
-		<font color="black"><a href="${contextRoot}/home">The IT Depot</a></font><span
+		<font color="black"><a href="${contextRoot}/home"><i><b>Apple Inc</b></i></a></font><span
 			class="glyphicon glyphicon-shopping-cart"></span>
 	</h1>
 
@@ -38,7 +38,9 @@
 				data-toggle="dropdown" href="#">IT Depot<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				
-			<li class="dropdown"><a class="dropdown-toggle"
+				
+				
+			<%-- <li class="dropdown"><a class="dropdown-toggle"
 				data-toggle="dropdown" href="#">Laptops<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="${contextRoot}/laptops">Laptops</a></li>
@@ -49,8 +51,8 @@
 
 
 
-				</ul></li>
-
+				</ul></li> --%>
+<%-- 
 			<li class="dropdown"><a class="dropdown-toggle"
 				data-toggle="dropdown" href="#">Hardwares<span class="caret"></span></a>
 				<ul class="dropdown-menu">
@@ -62,13 +64,13 @@
 					<li><a href="${contextRoot}/graphiccards">Graphic Cards</a></li>
 
 					<li><a href="${contextRoot}/fancontroller">Fan Controller</a></li>
-				</ul></li>
-			<li class="dropdown"><a class="dropdown-toggle"
+				</ul></li> --%>
+		<%-- 	<li class="dropdown"><a class="dropdown-toggle"
 				data-toggle="dropdown" href="#">Softwares<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="${contextRoot}/antivirus">Anti Virus</a></li>
 					<li><a href="${contextRoot}/operatingsystem">OpratingSystems</a></li>
-				</ul></li> 
+				</ul></li>  --%>
 					<%-- <li><a href="${contextRoot}/about">About Us</a></li>
 					<li><a href="${contextRoot}/contact">Contact Us</a></li> --%>
 				</ul></li>
@@ -136,7 +138,7 @@
 									<li><a href="${contextRoot}/mycart/${userid}">My Cart</a></li>
 
 								<li><a href="${contextRoot}/changeAddress">Addresses</a></li>
-								<li><a href="${contextRoot}/personaldetails">Personal Details</a></li>
+								<li><a href="${contextRoot}/PersonalDetails">Personal Details</a></li>
 								
 								<li><a href="${contextRoot}/orderDetails">Orders</a></li>
 								<li><a href="${contextRoot}/manageAddress">Shipping Address</a></li>
