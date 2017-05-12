@@ -83,3 +83,43 @@ create table address (
 	pincode number(6) not null,
 	is_active boolean not null
 );
+
+
+
+create table ordertable (
+
+    orderid IDENTITY primary key,
+    uid number(6),
+    addid number(6),
+    amount number(15),
+    is_active boolean not null,
+    is_ordered boolean not null,
+);
+
+
+
+
+create table orderitem (
+
+
+
+
+	oitemid identity primary key,
+
+	orderid number(6),
+
+	uid number(6),
+
+	pid number(6),
+
+	quantity number(6),
+
+	itotal number(15),
+
+	addid number(6),
+
+	is_active boolean not null
+
+	
+
+);

@@ -148,6 +148,25 @@
 <c:if test="${userClickShowProduct==true}">
 		<%@include file="SingleProduct.jsp"%>
 	</c:if>
+	
+	<c:if test="${userClickedSelectAddress == true }">
+
+ 		<%@include file="SelectAddress.jsp" %>
+ 		
+
+
+ 	</c:if>
+ 	<c:if test="${userClickedPaymentMode ==true }">
+
+		<%@include file="Payment.jsp" %>
+
+	</c:if> 
+ 	
+ 	<c:if test="${userClickedConfirmPurchase ==true }">
+
+		<%@include file="ConfirmProduct.jsp" %>
+
+	</c:if>
 	<!-- /.container -->
 
 	<!--footer comes here  -->

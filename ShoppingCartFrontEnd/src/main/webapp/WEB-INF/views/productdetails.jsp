@@ -5,7 +5,7 @@
                 </div>
                 <div class="col-xs-5" style="border:0px solid gray">
                     <!-- Datos del vendedor y titulo del producto -->
-                    <h3>${product.name}</h3>    
+                    <h3> Model Name:-  ${product.name}</h3>    
                   
 
                     <!-- Precious -->
@@ -18,17 +18,21 @@
 						    	
 								<p>${product.description}</p>
 						  </div>
+						  </div></br>
+						   <div class="col-md-8 col-sm-8 col-xs-8">
+								<a href="${contextRoot}/user/addToCart/${product.id}" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a>
+    						</div>
 						</div>
 						
 
                     <!-- Detalles especificos del producto -->
-                    <div class="section">
+                   <!--  <div class="section">
                         <h6 class="title-attr" style="margin-top:15px;" ><small>COLOR</small></h6>                    
                         <div>
                             <div class="attr" style="width:25px;background:#5a5a5a;"></div>
                             <div class="attr" style="width:25px;background:white;"></div>
                         </div>
-                    </div>
+                    </div> -->
                   <!--   <div class="section" style="padding-bottom:5px;">
                         <h6 class="title-attr"><small>CAPACIDAD</small></h6>                    
                         <div>
