@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default" style="    background-color: lavender;">
 
   <div class="panel-heading">Select payment mode</div>
 
@@ -10,9 +10,9 @@
 
 							<div class="form-group">	
 
-								<input type="radio" value="ONLINE"/>Pay Online<br>
+								<h1><input type="radio" value="ONLINE"/>Pay Online</h1><br>
 
-								<input type="radio" value="COD"/>Cash on Delivery
+								<h1><input type="radio" value="COD"/>Cash on Delivery</h1>
 
 							</div>
 
@@ -22,7 +22,7 @@
 
 						 <div class="well text-center">
 
-							<a href="${contextRoot}/">Place order</a>
+							<a href="${contextRoot}/PaymentProcess">Place order</a>
 
 						 </div>
 

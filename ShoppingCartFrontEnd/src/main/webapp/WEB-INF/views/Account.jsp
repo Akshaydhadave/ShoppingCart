@@ -9,7 +9,8 @@
 <body>
 <center><h1><p class="forlegends">Your  Profile</p></h1></center>
 					
-					<div class="panel panel-default">
+					<div class="panel panel-default" style="background-color: darkcyan;"
+					>
 					  	
 						<div class="panel-body">
 							<center><h2><p class="myachead">Name: 

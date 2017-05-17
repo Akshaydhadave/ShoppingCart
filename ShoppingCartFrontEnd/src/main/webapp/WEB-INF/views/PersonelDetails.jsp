@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default" style="background-color : azure;">
 					  <div class="panel-heading">
 						<h3 class="panel-title">Update Personal information</h3>
 					</div>
@@ -33,25 +33,25 @@
 						
 
                         <div class="form-group col-md-12">
-                            <form:label path="fname">First name: <font color='red'><form:errors path="fname" /></font></form:label>
+                            <h4><form:label path="fname">First name: <font color='red'><form:errors path="fname" /></font></form:label></h4>
                             <form:input type="text" class="form-control" path="fname" value="${user.fname}" placeholder="First name" />
                             
                         </div>
 
 						 <div class="form-group col-md-12">
-                            <form:label path="lname">Last name: <font color='red'><form:errors path="lname" /></font></form:label>
+                           <h4> <form:label path="lname">Last name: <font color='red'><form:errors path="lname" /></font></form:label></h4>
                             <form:input type="text" class="form-control" path="lname" value="${user.lname}" placeholder="Last name" />
                             
                         </div>
 
                         <div class="form-group col-md-12">
-                            <form:label path="email">Email: <font color='red'><form:errors path="email" /></font></form:label>
+                            <h4><form:label path="email">Email: <font color='red'><form:errors path="email" /></font></form:label></h4>
                             <form:input type="email" class="form-control" path="email" placeholder="Email" value="${user.email}" />
                             
                         </div>
 							
 						<div class="form-group col-md-12">
-					         <form:label path="pno">Enter new mobile number</form:label>
+					         <h4><form:label path="pno">Mobile number</form:label></h4>
 					         <form:input type="text" class="form-control" path="pno" placeholder="New mobile number" value="${user.pno}" />
 					                            
 					    </div>	

@@ -114,7 +114,7 @@ public class AddressController {
 		return mv;
 	}
 	
-	@RequestMapping("/updateAddresses/{id}")
+	@RequestMapping("/updateAddress/{id}")
 	public ModelAndView updateAddresses(@PathVariable("id") int id, Principal principal, @ModelAttribute("address") Address address1, BindingResult result) {
 		// actually you have to take the data from db
 		// temporarily

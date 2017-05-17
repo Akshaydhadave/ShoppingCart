@@ -10,7 +10,7 @@
 			          <div class="panel-body">
 			          	<legend class="text-center"></legend>
 			            <ul class="list-group">
-			              <a href="${contextRoot}/myAccount" id="myAccount" class="list-group-item">Account details</a>
+			              <a href="${contextRoot}/Account" id="myAccount" class="list-group-item">Profile</a>
 			              <a href="${contextRoot}/orderDetails" id="orderDetails" class="list-group-item">Orders</a>
 			            <%--   <a href="${contextRoot}/user/wishList" id="wishList" class="list-group-item">Wish list</a> --%>
 			              
@@ -18,10 +18,10 @@
 			            <legend class="text-center"></legend>
 			            <ul class="list-group">
 			              <a href="${contextRoot}/PersonalDetails" id="personalInfo" class="list-group-item">Personal information</a>
-			              <a href="${contextRoot}/ChangePassword" id="changePW" class="list-group-item">Change password</a>
-			              <a href="${contextRoot}/billingAddress" id="billingAddress" class="list-group-item">billing address</a>
+			              <a href="${contextRoot}/ChangePassword" id="changePW" class="list-group-item">Change Password</a>
+			              <a href="${contextRoot}/BillingAddress" id="billingAddress" class="list-group-item">Billing address</a> 
 			              <a href="${contextRoot}/manageAddress" id="manageAddress" class="list-group-item">Manage addresses</a>
-			              <a href="${contextRoot}/changeMobNo" id="changeMobNo" class="list-group-item">Update mobile number</a>
+			            
 			              
 			            </ul> 
 			          </div>
@@ -40,6 +40,9 @@
 					</c:if>  	
 					<c:if test="${userClickedChangePassword==true }">
 						<%@include file="ChangePassword.jsp" %>
+					</c:if> 
+					<c:if test="${userClickedBillingAddress==true }">
+						<%@include file="BillingAddress.jsp" %>
 					</c:if>  				
 
 		

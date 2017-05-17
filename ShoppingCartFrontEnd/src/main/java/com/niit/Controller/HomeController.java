@@ -76,21 +76,7 @@ public class HomeController {
 				return mv;
 			}
 
-			/*@RequestMapping(value={"/signup"})
-			public ModelAndView signup(){
-				ModelAndView mv=new ModelAndView("Page");
-				mv.addObject("title", "Sign Up");
-				mv.addObject("userClickedSignUp", true);
-				return mv;
-			}*/
-		
-			/*@RequestMapping(value={"/login"})
-			public ModelAndView login(){
-				ModelAndView mv=new ModelAndView("Page");
-				mv.addObject("title", "Login");
-				mv.addObject("userClickedLogin", true);
-				return mv;
-			}*/
+			
 			
 			
 			@RequestMapping(value = { "/login" })
@@ -178,11 +164,11 @@ public class HomeController {
 				mv.addObject("userClickedRAM", true);
 				return mv;
 			}
-			@RequestMapping(value={"/monitor"})
-			public ModelAndView monitor(){
+			@RequestMapping(value={"/PaymentProcess"})
+			public ModelAndView paymentPro(){
 				ModelAndView mv=new ModelAndView("Page");
 				mv.addObject("title", "Monitor");
-				mv.addObject("userClickedMonitor", true);
+				mv.addObject("userClickedPaymentProcess", true);
 				return mv;
 			}
 			
@@ -253,24 +239,7 @@ public class HomeController {
 				return mv;
 			}
 		
-			
-//			@RequestMapping(value={"/viewcategory"})
-//			public ModelAndView viewcategory(){
-//				ModelAndView mv=new ModelAndView("Page");
-//				mv.addObject("title", "viewcategory");
-//				mv.addObject("userClickedView", true);
-//				return mv;
-//			}
-//		
-//			@RequestMapping(value={"/addcategory"})
-//			public ModelAndView addcategory(){
-//				ModelAndView mv=new ModelAndView("Page");
-//				mv.addObject("title", "addcategory");
-//				mv.addObject("userClickedAddCategory", true);
-//				return mv;
-//			}
-//		
-//
+	
 			@RequestMapping("/signup")
 			public ModelAndView showRegistrationPage(@ModelAttribute("user") UserTable user, BindingResult result)
 			{

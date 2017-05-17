@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default" style="    background-color: aliceblue;">
 
 	<h3>Confirm Purchase</h3>
 
@@ -8,7 +8,8 @@
 
 		<div class="col-md-4">
 
-				<p>${user.fname} ${user.lname}</p><p>Phone: ${user.pno}</p>
+				<h3><b><p>${user.fname} ${user.lname}</p></b></h3>
+				<p>Phone: ${user.pno}</p>
 
 				</div>
 
@@ -16,7 +17,7 @@
 
 				
 
-				<p>Billing Address</p>
+				<h3><p>Billing Address</p></h3>
 
 				<p>${user.add1}</p>
 
@@ -38,7 +39,7 @@
 
 				
 
-				<p>Shipping Address</p>
+				<h3><p>Shipping Address</p></h3>
 
 				<p>${orderstuff.address.add1}</p>
 
@@ -70,7 +71,7 @@
 
 </div>
 
-<div class="panel panel-default">
+<div class="panel panel-default" style="    background-color: lavenderblush;">
 
 			<!-- <div class="panel-heading">
 
@@ -90,9 +91,9 @@
 
 				                
 
-				                <th class="col-md-2 col-xs-2"></th>
+				                <th class="col-md-2 col-xs-2">Product Name</th>
 
-				                <th class="col-md-6 col-xs-6"></th>
+				                <th class="col-md-6 col-xs-6">Description</th>
 
 				                <th class="col-md-1 col-xs-1">Price</th>
 
@@ -144,12 +145,36 @@
 
 				       <div class="panel panel-default">
 
-				       		<div class="panel-body">
+				       		<%-- <div class="panel-body">
 
 				       			<p>Subtotal: ${orderstuff.amount}</p>
 
 				       			<p><a href="${contextRoot}/Payment">Proceed to pay</a></p>
 
 				       		</div>
+				       		 --%>
+				       		<tfoot>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal<br>Estimated shipping</h5></td>
+                        <td class="text-right"><h3>Total &#8377; ${orderstuff.amount}</h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        
+                        <td>
+                       
+                           <a class="btn btn-success" href="${contextRoot}/Payment">Proceed To Pay <span class="glyphicon glyphicon-play"></span></a>
+                        </td>
+                    </tr>
+                </tfoot>
 
 				       </div>

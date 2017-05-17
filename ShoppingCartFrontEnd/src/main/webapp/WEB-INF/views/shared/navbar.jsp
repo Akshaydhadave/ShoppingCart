@@ -6,13 +6,13 @@
 <div class="jumbotron text-center myJumbo">
 	<h1>
 		<font color="black"><a href="${contextRoot}/home"><i><b>Apple Inc</b></i></a></font><span
-			class="glyphicon glyphicon-shopping-cart"></span>
+			class="glyphicon glyphicon-apple icon"></span>
 	</h1>
 
 
 
 
-	<p>India's First IT Online Shopping Store</p>
+	<p><h2><i><b><font color="lavender">Think Different</font></b></i></h2></p>
 	<!-- <form class="myform">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="input-group input-group-lg">
@@ -39,40 +39,7 @@
 				<ul class="dropdown-menu">
 				
 				
-				
-			<%-- <li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#">Laptops<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="${contextRoot}/laptops">Laptops</a></li>
-					<li><a href="${contextRoot}/laptopaccessories">Laptops
-							Accessories</a></li>
-					<li><a href="${contextRoot}/batteriesandcharger">Batteries
-							And Chargers</a></li>
-
-
-
-				</ul></li> --%>
-<%-- 
-			<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#">Hardwares<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="${contextRoot}/keyboards">Keyboards</a></li>
-					<li><a href="${contextRoot}/motherboards">Motherboards</a></li>
-					<li><a href="${contextRoot}/mouse">Mouse</a></li>
-					<li><a href="${contextRoot}/monitor">Monitor</a></li>
-					<li><a href="${contextRoot}/ram">RAM(Memory)</a></li>
-					<li><a href="${contextRoot}/graphiccards">Graphic Cards</a></li>
-
-					<li><a href="${contextRoot}/fancontroller">Fan Controller</a></li>
-				</ul></li> --%>
-		<%-- 	<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#">Softwares<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="${contextRoot}/antivirus">Anti Virus</a></li>
-					<li><a href="${contextRoot}/operatingsystem">OpratingSystems</a></li>
-				</ul></li>  --%>
-					<%-- <li><a href="${contextRoot}/about">About Us</a></li>
-					<li><a href="${contextRoot}/contact">Contact Us</a></li> --%>
+		
 				</ul></li>
 
 
@@ -137,13 +104,14 @@
 								<li><a href="${contextRoot}/Account/${userid}">Profile</a></li>
 									<li><a href="${contextRoot}/mycart/${userid}">My Cart</a></li>
 
-								<li><a href="${contextRoot}/changeAddress">Addresses</a></li>
-								<li><a href="${contextRoot}/PersonalDetails">Personal Details</a></li>
+								<li><a href="${contextRoot}/BillingAddress"> Edit Addresses</a></li>
+								<li><a href="${contextRoot}/PersonalDetails"> Edit Personal Details</a></li>
 								
 								<li><a href="${contextRoot}/orderDetails">Orders</a></li>
 								<li><a href="${contextRoot}/manageAddress">Shipping Address</a></li>
 							
 							</ul></li>
+								<li><a href="${contextRoot}/PersonalDetails">Edit Profile</a></li>
 					</ul>
 				</security:authorize>
 			</c:if>

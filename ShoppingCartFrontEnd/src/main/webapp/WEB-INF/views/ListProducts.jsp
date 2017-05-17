@@ -152,6 +152,7 @@
 						       
 						        <p class="productprice"><span class="rupeesymbol">&#8377;</span>${product.price}</p>
 						        </div>
+						        
 						    </div>
 						  </div>
 						  

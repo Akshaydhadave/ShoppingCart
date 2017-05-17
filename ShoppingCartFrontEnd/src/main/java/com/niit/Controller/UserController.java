@@ -150,6 +150,43 @@ public class UserController {
 		mv.addObject("userClickedChangePassword",true);
 		return mv;
 	}
+	
+	@RequestMapping(value={"/BillingAddress"})
+	public ModelAndView billingAddress(Principal principal){
+		ModelAndView mv=new ModelAndView("Page");
+		mv.addObject("title", "billing address");
+		
+		UserTable user = userDAO.getUserByEmail(principal.getName());
+		// getting cart
+		Cart cart =user.getCart();
+		
+		//getting cartitem
+		List<CartItem> cilist = cartItemDAO.getByUserid(user.getUid());
+		
+		mv.addObject("cilist",cilist);
+		mv.addObject("user",user);
+		mv.addObject("cartamt",user.getCart().getItems());
+		mv.addObject("cartdata",user.getCart());
+		mv.addObject("userClickedBillingAddress", true);
+		return mv;
+				
+	}
+	
+	@RequestMapping(value={"/user/updateBillingAddress"})
+	public ModelAndView updateBillingAddress(@ModelAttribute("user") UserTable user , BindingResult result, Principal principal) {
+		ModelAndView mv = new ModelAndView("Page");
+		
+		
+		boolean b = userDAO.update(user);
+		if(b) System.out.println("User address updated");
+		else System.out.println("User address not updated");
+		
+		UserTable user1 = userDAO.getUserByEmail(principal.getName());
+		
+		mv.addObject("user", user1);
+		mv.addObject("userClickedBillingAddress",true);
+		return mv;
+	}
 }
 	
 	

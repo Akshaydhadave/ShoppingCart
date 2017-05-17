@@ -21,7 +21,7 @@ public class UserTable {
 	private int uid;
 	@Pattern(regexp = "^([7-9]{1})([0-9]{9})", message = "Not a valid number ,Phone No. must be of 10 digits")
 	private String pno;
-	@Size(min=8,max=20, message="Please select atleast 8 character password!")
+	@Size(min=8,max=20, message="Please Used Atleast 8 Character Password!")
 	private String pw;
 	@Size(min=2,max=50, message="Please enter valid first name!")
 	private String fname;
@@ -33,11 +33,11 @@ public class UserTable {
 	private String add1;
 	@Size(min=2,max=50, message="Please enter valid address line!")
 	private String add2;
-	@Size(min=2,max=50, message="Please enter valid address line!")
+	@Size(min=2,max=50, message="Please Enter Valid address line!")
 	private String add3;
-	@Size(min=2,max=50, message="Please enter valid address line!")
+	@Size(min=2,max=50, message="Please Enter Valid Address Line!")
 	private String city;
-	@Size(min=2,max=50, message="Please enter valid address line!")
+	@Size(min=2,max=50, message="Please Enter Pincode!")
 	private String state;
 	
 	

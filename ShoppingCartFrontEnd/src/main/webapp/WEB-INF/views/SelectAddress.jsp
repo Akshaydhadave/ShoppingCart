@@ -1,8 +1,8 @@
-<div class="panel panel-default">
+<div class="panel panel-default" style="background-color :aliceblue;">
 
 							  	<div class="panel-heading">
 
-									<h3 class="panel-title">Select address</h3>
+									<center><h3 class="panel-title">Select Address </h3></center>
 
 								</div>
 
@@ -20,17 +20,15 @@
 
 										     
 
-											        <p>${addresses.add1},</p>
+											        <h4><p>${addresses.add1},</p></h4>
 
-											        <p>${addresses.add2},</p>
+											       <h4><p>${addresses.add2},</p></h4>
 
-											        <p>${addresses.add3},</p>
+											        <h4> <p>${addresses.add3},</p></h4>
+											      <h4>  <p>${addresses.city},</p></h4>
 
-											        <p>${addresses.city},</p>
-
-											        <p>${addresses.state},</p>
-
-											        <p>${addresses.pincode}</p>
+											        <h4><p>${addresses.state},</p></h4>
+											        <h4><p>${addresses.pincode}</p></h4>
 
 											        
 

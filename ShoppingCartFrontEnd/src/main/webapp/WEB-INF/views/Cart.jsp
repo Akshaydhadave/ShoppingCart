@@ -1,6 +1,6 @@
  <c:if test="${cartamt >0}">
-<table class="table">
-	<thead>
+<table class="table" style="background-color: lightgray;">
+	<thead style="background-color: cornflowerblue;">
 	<tr>
 		<th>
 			Items
@@ -48,6 +48,7 @@
                         <button type="button" class="btn btn-default">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                         </button></td>
+                        
                         <td>
                        
                            <a class="btn btn-success" href="${contextRoot}/selectAddress"> Place Order <span class="glyphicon glyphicon-play"></span></a>
